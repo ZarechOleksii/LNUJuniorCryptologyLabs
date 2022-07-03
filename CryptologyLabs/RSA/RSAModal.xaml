@@ -1,0 +1,43 @@
+﻿<Window x:Class="CryptologyLabs.RSA.RSAModal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CryptologyLabs.RSA"
+        mc:Ignorable="d"
+        Title="RSA" Height="300" Width="500">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+        </Grid.ColumnDefinitions>
+
+        <Button
+            Grid.Row="0"
+            Background="Green"
+            FontSize="36"
+            Click="NewKeys_Click">
+            Generate new keys
+        </Button>
+        
+        <TextBlock
+            Grid.Row="1"
+            FontSize="26"
+            TextAlignment="Center"
+            VerticalAlignment="Center">
+            OR
+        </TextBlock>
+        
+        <Button
+            Grid.Row="2"
+            Background="DarkBlue"
+            FontSize="36"
+            Click="ExistingKeys_Click">
+            Select Existing Keys
+        </Button>
+    </Grid>
+</Window>

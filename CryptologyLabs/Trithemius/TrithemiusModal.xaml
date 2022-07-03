@@ -1,0 +1,188 @@
+﻿<Window x:Class="CryptologyLabs.Trithemius.TrithemiusModal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CryptologyLabs.Trithemius"
+        mc:Ignorable="d"
+        Title="TrithemiusModal" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="130*"></ColumnDefinition>
+            <ColumnDefinition Width="50*"></ColumnDefinition>
+            <ColumnDefinition Width="95*"></ColumnDefinition>
+            <ColumnDefinition Width="50*"></ColumnDefinition>
+            <ColumnDefinition Width="95*"></ColumnDefinition>
+            <ColumnDefinition Width="50*"></ColumnDefinition>
+            <ColumnDefinition Width="95*"></ColumnDefinition>
+            <ColumnDefinition Width="50*"></ColumnDefinition>
+            <ColumnDefinition Width="90*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock
+            Grid.Row="1"
+            Grid.Column="0"
+            FontSize="26"
+            TextAlignment="Center"
+            VerticalAlignment="Center">
+            Linear:
+        </TextBlock>
+
+        <TextBlock
+            Grid.Row="1"
+            Grid.Column="1"
+            FontSize="26"
+            TextAlignment="Center"
+            VerticalAlignment="Center">
+            A =
+        </TextBlock>
+
+        <TextBox
+            Name="LinearABox"
+            Grid.Row="1"
+            Grid.Column="2"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center">
+        </TextBox>
+
+        <TextBlock
+            Grid.Row="1"
+            Grid.Column="3"
+            FontSize="26"
+            TextAlignment="Center"
+            VerticalAlignment="Center">
+            B =
+        </TextBlock>
+
+        <TextBox
+            Name="LinearBBox"
+            Grid.Row="1"
+            Grid.Column="4"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center">
+        </TextBox>
+
+        <Button
+            Grid.Column="8"
+            Grid.Row="1"
+            Background="Green"
+            FontSize="36"
+            Click="Linear_Click">
+            Next
+        </Button>
+
+        <TextBlock
+            Grid.Row="3"
+            Grid.Column="0"
+            FontSize="26"
+            TextAlignment="Center"
+            VerticalAlignment="Center">
+            Non linear:
+        </TextBlock>
+
+        <TextBlock
+            Grid.Row="3"
+            Grid.Column="1"
+            FontSize="26"
+            TextAlignment="Center"
+            VerticalAlignment="Center">
+            A =
+        </TextBlock>
+        
+        <TextBox
+            Name="NonLinearABox"
+            Grid.Row="3"
+            Grid.Column="2"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center">
+        </TextBox>
+
+        <TextBlock
+            Grid.Row="3"
+            Grid.Column="3"
+            FontSize="26"
+            TextAlignment="Center"
+            VerticalAlignment="Center">
+            B =
+        </TextBlock>
+
+        <TextBox
+            Name="NonLinearBBox"
+            Grid.Row="3"
+            Grid.Column="4"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center">
+        </TextBox>
+
+        <TextBlock
+            Grid.Row="3"
+            Grid.Column="5"
+            FontSize="26"
+            TextAlignment="Center"
+            VerticalAlignment="Center">
+            C =
+        </TextBlock>
+
+        <TextBox
+            Name="NonLinearCBox"
+            Grid.Row="3"
+            Grid.Column="6"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center">
+        </TextBox>
+
+        <Button
+            Grid.Column="8"
+            Grid.Row="3"
+            Background="Green"
+            FontSize="36"
+            Click="NonLinear_Click">
+            Next
+        </Button>
+
+        <TextBlock
+            Grid.Row="5"
+            Grid.Column="0"
+            FontSize="26"
+            TextAlignment="Center"
+            VerticalAlignment="Center">
+            Watchword:
+        </TextBlock>
+
+        <TextBox
+            Name="WatchwordBox"
+            Grid.Row="5"
+            Grid.Column="2"
+            Grid.ColumnSpan="4"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center">
+        </TextBox>
+
+        <Button
+            Grid.Column="8"
+            Grid.Row="5"
+            Background="Green"
+            FontSize="36"
+            Click="Watchword_Click">
+            Next
+        </Button>
+
+        <Button
+            Grid.Row="7"
+            Grid.ColumnSpan="9"
+            Background="DarkRed"
+            FontSize="36"
+            Click="Cancel_Click">
+            Cancel
+        </Button>
+    </Grid>
+</Window>
